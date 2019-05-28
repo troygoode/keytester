@@ -3,11 +3,16 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "prettier": "prettier --write {public,routes}/**/*.js server.js"
+    "dev": "next",
+    "start": "next start",
+    "build": "next build",
+    "export": "npm run build && next export",
+    "prettier": "prettier --write {lib,pages}/**/*.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "pug": "^2.0.3"
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "engines": {
     "node": "^10.15",
