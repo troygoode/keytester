@@ -1,16 +1,19 @@
 {
-  "name": "keytest"
-  , "version": "0.0.1"
-  , "private": true
-  , "scripts": {
-    "start": "node app"
-  }
-  , "dependencies": {
-    "express": "*",
-    "jade": "*"
-  }
-  , "engines": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
+  "name": "keytester",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "prettier": "prettier --write {public,routes}/**/*.js server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.3"
+  },
+  "engines": {
+    "node": "^10.15",
+    "npm": "^2"
+  },
+  "devDependencies": {
+    "prettier": "^1.17.1"
   }
 }
